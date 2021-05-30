@@ -20,7 +20,10 @@ class Line(models.Model):
 
 
 class Log(models.Model):
-    line = models.ForeignKey(Line)
+    line = models.ForeignKey(
+        Line,
+        on_delete=models.CASCADE
+    )
     status = models.CharField(
         max_length=100,
         null=True,
