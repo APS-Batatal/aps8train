@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+    aps8train-db:
+        image: mariadb:latest
+        restart: unless-stopped
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./database:/var/lib/database
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=aps8train
+volumes:
+    aps8train-db:
