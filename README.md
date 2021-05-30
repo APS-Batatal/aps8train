@@ -20,7 +20,7 @@ $   env/Scripts/activate
   ```
 Instalar as dependências
 ```sh
-$   pip install -r requirments.txt
+$   pip install -r requirements.txt
 ```
 Preparar migração do banco
 ```sh
